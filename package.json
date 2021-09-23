@@ -5,7 +5,8 @@
   "main": "buscarTemas.js",
   "dependencies": {
     "axios": "^0.21.4",
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "nodemon": "^2.0.13"
   },
   "devDependencies": {},
   "scripts": {
