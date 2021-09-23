@@ -1,8 +1,8 @@
 const express = require('express');
-const router = express.Router();
-
 const controller = require('../controllers/propositionControler');
 
-router.get('/', controller.list)
+const router = express.Router();
+
+router.get('/', controller.list);
 
 module.exports = router;

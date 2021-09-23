@@ -1,9 +1,9 @@
 const express = require('express');
+const routes = require('./routes');
+
 const app = express();
 
-//Rotas
-const routes = require('./routes');
+// Rotas
 app.use(routes);
 
 module.exports = app;
-

@@ -7,10 +7,17 @@
     "express": "^4.15.4",
     "nodemon": "^2.0.12"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "prettier": "^2.4.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./bin/server.js"
+    "start": "nodemon ./bin/server.js",
+    "lint": "eslint \"./src/**/*.js\" --ignore-path .gitignore --max-warnings 0",
+    "lint:fix": "npm run lint --fix"
   },
   "keywords": [],
   "author": "",

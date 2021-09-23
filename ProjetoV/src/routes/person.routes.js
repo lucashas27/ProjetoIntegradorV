@@ -1,7 +1,7 @@
 const express = require('express');
-const router = express.Router();
+const controller = require('../controllers/personController');
 
-const controller = require('../src/controllers/personController.js')
+const router = express.Router();
 
 router.post('/', controller.post);
 router.put('/:id', controller.put);
