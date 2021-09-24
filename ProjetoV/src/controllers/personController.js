@@ -7,7 +7,7 @@ exports.put = (req, res) => {
   res.status(201).send(`Requisição recebida com sucesso! ${id}`);
 };
 
-exports.deconste = (req, res) => {
+exports.delete = (req, res) => {
   const { id } = req.params;
   res.status(200).send(`Requisição recebida com sucesso! ${id}`);
 };
