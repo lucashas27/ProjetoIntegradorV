@@ -2,10 +2,11 @@ const api = require('../services/api');
 
 exports.list = async (req, res) => {
   try {
-    const { siglaUfAutor } = req.query;
+    const { siglaUfAutor, codTema } = req.query;
     const { data: propositions } = await api.get('proposicoes', {
       params: {
         ...(siglaUfAutor && { siglaUfAutor }),
+        ...(codTema && { codTema }),
       },
     });
 
