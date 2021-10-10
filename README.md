@@ -1,13 +1,15 @@
 # SCM:
 
-Branch main: código em produção do projeto
-Feature/XXXX - Branch individual de cada participante contendo o seu código para desenvolvimento
+<p>Branch main: código em produção do projeto</p>
+<p>Feature/XXXX - Branch individual de cada participante contendo o seu código para desenvolvimento</p>
 
 ## Release
 
 Tag - release/sprint1 -> Contém todo o código desenvolvido durante a Sprint 1.
 
+<br>
 
+</br>
 
 # API para os microserviços: 
 
