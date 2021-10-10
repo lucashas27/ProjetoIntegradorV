@@ -1,3 +1,14 @@
+# SCM:
+
+Branch main: código em produção do projeto
+Feature/XXXX - Branch individual de cada participante contendo o seu código para desenvolvimento
+
+## Release
+
+Tag - release/sprint1 -> Contém todo o código desenvolvido durante a Sprint 1.
+
+
+
 # API para os microserviços: 
 
 Using curl:
