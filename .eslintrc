@@ -17,6 +17,7 @@
         "allow": ["time", "timeEnd", "warn", "error"]
       }
     ],
-    "no-shadow": ["error"]
+    "no-shadow": ["error"],
+    "no-underscore-dangle": "off"
   }
 }

@@ -5,6 +5,7 @@ const propositionRoute = require('./proposition.routes');
 const deputadosRoute = require('./deputados.routes');
 const temasRoute = require('./temas.routes');
 const votacaoRoute = require('./votacao.routes');
+const userRoutes = require('./user.routes');
 
 const router = express.Router();
 
@@ -18,5 +19,6 @@ router.use('/propositions', propositionRoute);
 router.use('/deputados', deputadosRoute);
 router.use('/temas', temasRoute);
 router.use('/votacao', votacaoRoute);
+router.use('/user', userRoutes);
 
 module.exports = router;
