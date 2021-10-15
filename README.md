@@ -11,6 +11,41 @@ Tag - release/sprint1 -> Contém todo o código desenvolvido durante a Sprint 1.
 
 </br>
 
+# Autenticação JWT:
+
+## Cadastrar um usuário para receber um token:
+
+<p>
+curl --request POST \
+  --url 'http://localhost:3000/user?=' \
+  --header 'Authorization: Bearer ' \
+  --header 'Content-Type: application/json' \
+  --data '{
+		"name": "{NAME}",
+		"username": "{USERNAME}",
+    "password": "{PASSWORD}",
+		"confirmPassword": "{PASSWORD}"
+}'
+</p>
+
+## Após se cadastrar, logar-se para receber seu token:
+
+<code> 
+  curl --request POST \
+  --url 'http://localhost:3000/user/login?=' \
+  --header 'Authorization: Bearer ' \
+  --header 'Content-Type: application/json' \
+  --data '{
+		"username": "{username cadastrado}",
+    "password": "{password}",
+		"confirmPassword": "{password}"
+}'
+</code>
+
+
+<br>
+</br>
+
 # API para os microserviços: 
 
 Using curl:
