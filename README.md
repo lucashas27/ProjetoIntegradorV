@@ -15,30 +15,32 @@ Tag - release/sprint1 -> Contém todo o código desenvolvido durante a Sprint 1.
 
 ## Cadastrar um usuário para receber um token:
 
+<code>
 <p>
-curl --request POST \
-  --url 'http://localhost:3000/user?=' \
-  --header 'Authorization: Bearer ' \
-  --header 'Content-Type: application/json' \
-  --data '{
-		"name": "{NAME}",
-		"username": "{USERNAME}",
-    "password": "{PASSWORD}",
-		"confirmPassword": "{PASSWORD}"
+<p>curl --request POST \ </p>
+  <p> --url 'http://localhost:3000/user?=' \ </p>
+  <p> --header 'Authorization: Bearer ' \ </p>
+  <p> --header 'Content-Type: application/json' \ </p>
+  <p> --data '{ </p>
+  <p>	"name": "{NAME}", </p>
+  <p>	"username": "{USERNAME}", </p>
+  <p> "password": "{PASSWORD}", </p>
+  <p>	"confirmPassword": "{PASSWORD}" </p>
 }'
 </p>
+</code>
 
 ## Após se cadastrar, logar-se para receber seu token:
 
 <code> 
-  curl --request POST \
-  --url 'http://localhost:3000/user/login?=' \
-  --header 'Authorization: Bearer ' \
-  --header 'Content-Type: application/json' \
-  --data '{
-		"username": "{username cadastrado}",
-    "password": "{password}",
-		"confirmPassword": "{password}"
+ <p> curl --request POST \ </p>
+ <p> --url 'http://localhost:3000/user/login?=' \ </p>
+ <p> --header 'Authorization: Bearer ' \ </p>
+ <p> --header 'Content-Type: application/json' \ </p>
+ <p> --data '{ </p>
+	<p>	"username": "{username cadastrado}", </p>
+  <p> "password": "{password}", </p>
+	<p>	"confirmPassword": "{password}" </p>
 }'
 </code>
 
