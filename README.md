@@ -5,8 +5,8 @@
 
 ## Release
 
-Tag - release/sprint1 -> Contém todo o código desenvolvido durante a Sprint 1.
-Tag - release/sprint2 -> Contém todo o código desenvolvido durante as Sprints 1 e 2
+<p> Tag - release/sprint1 -> Contém todo o código desenvolvido durante a Sprint 1. </p>
+<p> Tag - release/sprint2 -> Contém todo o código desenvolvido durante as Sprints 1 e 2 </p>
 
 <br>
 
