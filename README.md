@@ -6,6 +6,7 @@
 ## Release
 
 Tag - release/sprint1 -> Contém todo o código desenvolvido durante a Sprint 1.
+Tag - release/sprint2 -> Contém todo o código desenvolvido durante as Sprints 1 e 2
 
 <br>
 
@@ -15,43 +16,55 @@ Tag - release/sprint1 -> Contém todo o código desenvolvido durante a Sprint 1.
 
 ## Cadastrar um usuário para receber um token:
 
-<p>
 <code>
-
  Method <b>POST:</b>  
   https://microservice-buscadeputado.herokuapp.com/user/
-  </code>
+</code>
   
-  <p> ### Body: </p>
+ ### Body: 
+
   
-  <p>
-  {
-  <p> "username": {{USERNAME}}, </p>
-	<p> "name": {{NAME}}, </p>
-  <p> "password": {{password}}, </p>
-  <p> "confirmPassword": {{password}} </p>
+| Key | Value |
+|--- |--- |
+| "username" | {{USERNAME}} |
+| "name" | {{NAME}}} |
+| "password" | {{password}} |
+| "confirmPassword" | {{password}} |
+  
+## Examplo (JSON):
+  
+{
+		<p> "username": "tarley", </p>
+		<p> "name": "tarley", </p>
+    <p> "password": "123", </p>
+		<p> "confirmPassword": "123" </p>
 }
-  </p>
-
-
-</p>
-
+  
+  <br> </br>
 ## Após se cadastrar, logar-se para receber seu token:
 
 <code>
   Method <b>POST</b>:
     https://microservice-buscadeputado.herokuapp.com/user/login
-  
-  <p>
-    
-  <p> ### Body: </p>
-  {
-		 <p> "username": {{username}}",</p> 
-     <p>  "password": {{password}}, </p>
-		 <p> "confirmPassword": {{password}} </p>
-}
-  </p>
 </code>
+
+### Body: 
+    
+| Key | Value |
+|--- |--- |
+| "username" | {{USERNAME}} |
+| "password" | {{password}} |
+| "confirmPassword" | {{password}} |
+
+
+## Examplo (JSON):
+   
+{
+	<p> "username": "tarley",</p> 
+  <p> "password": "123", </p>
+	<p> "confirmPassword": "123" </p>
+}
+  
 
 <br>
 </br>
