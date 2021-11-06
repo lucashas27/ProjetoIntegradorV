@@ -20,8 +20,9 @@ Tag - release/sprint1 -> Contém todo o código desenvolvido durante a Sprint 1.
 
  Method <b>POST:</b>  
   https://microservice-buscadeputado.herokuapp.com/user/
+  </code>
   
-  Body:
+  <p> ### Body: </p>
   
   <p>
   {
@@ -32,7 +33,7 @@ Tag - release/sprint1 -> Contém todo o código desenvolvido durante a Sprint 1.
 }
   </p>
 
-</code>
+
 </p>
 
 ## Após se cadastrar, logar-se para receber seu token:
@@ -42,6 +43,8 @@ Tag - release/sprint1 -> Contém todo o código desenvolvido durante a Sprint 1.
     https://microservice-buscadeputado.herokuapp.com/user/login
   
   <p>
+    
+  <p> ### Body: </p>
   {
 		 <p> "username": {{username}}",</p> 
      <p>  "password": {{password}}, </p>
