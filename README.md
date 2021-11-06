@@ -17,33 +17,34 @@ Tag - release/sprint1 -> Contém todo o código desenvolvido durante a Sprint 1.
 
 <p>
 <code>
-curl --request POST \ 
-  --url 'http://localhost:3000/user?=' \
-  --header 'Authorization: Bearer ' \ 
-  --header 'Content-Type: application/json' \ 
-  --data '{ 
- 	"name": "{NAME}", 
- "username": "{USERNAME}", 
-  "password": "{PASSWORD}", 
- 	"confirmPassword": "{PASSWORD}" 
-}'
+
+ Method <b>POST:</b>  
+  https://microservice-buscadeputado.herokuapp.com/user/
+  
+  Body:
+  
+  {
+		"username": {{USERNAME}},
+		"name": {{NAME}},
+    "password": {{password}},
+		"confirmPassword": {{password}}
+}
+
 </code>
 </p>
 
 ## Após se cadastrar, logar-se para receber seu token:
 
-<code> 
-  curl --request POST \ 
-  --url 'http://localhost:3000/user/login?=' \ 
-  --header 'Authorization: Bearer ' \ 
-  --header 'Content-Type: application/json' \ 
-  --data '{ 
-	"username": "{username cadastrado}", 
-  "password": "{password}",
-	"confirmPassword": "{password}" 
-}'
+<code>
+  Method <b>POST</b>:
+    https://microservice-buscadeputado.herokuapp.com/user/login
+  
+  {
+		"username": {{username}}",
+    "password": {{password}},
+		"confirmPassword": {{password}}
+}
 </code>
-
 
 <br>
 </br>
