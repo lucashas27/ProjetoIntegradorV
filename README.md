@@ -23,12 +23,14 @@ Tag - release/sprint1 -> Contém todo o código desenvolvido durante a Sprint 1.
   
   Body:
   
+  <p>
   {
-		"username": {{USERNAME}},
-		"name": {{NAME}},
-    "password": {{password}},
-		"confirmPassword": {{password}}
+  <p> "username": {{USERNAME}}, </p>
+	<p> "name": {{NAME}}, </p>
+  <p> "password": {{password}}, </p>
+  <p> "confirmPassword": {{password}} </p>
 }
+  </p>
 
 </code>
 </p>
@@ -39,11 +41,13 @@ Tag - release/sprint1 -> Contém todo o código desenvolvido durante a Sprint 1.
   Method <b>POST</b>:
     https://microservice-buscadeputado.herokuapp.com/user/login
   
+  <p>
   {
-		"username": {{username}}",
-    "password": {{password}},
-		"confirmPassword": {{password}}
+		 <p> "username": {{username}}",</p> 
+     <p>  "password": {{password}}, </p>
+		 <p> "confirmPassword": {{password}} </p>
 }
+  </p>
 </code>
 
 <br>
